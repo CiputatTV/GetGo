@@ -8,6 +8,7 @@ import Register from '../auth/Register';
 import AdminTab from './AdminTab';
 import UserTab from './UserTab';
 import DriverTab from './DriverTab';
+import Forgot from '../auth/Forgot';
 
 const Stack = createStackNavigator();
 
@@ -16,6 +17,7 @@ const StackNavigation = () => {
     <Stack.Navigator initialRouteName='Login' screenOptions={{headerShown: false}}>
       <Stack.Screen name='Login' component={Login} />
       <Stack.Screen name='Register' component={Register} />
+      <Stack.Screen name='Forgot' component={Forgot} />
       <Stack.Screen name='AdminTab' component={AdminTab} />
       <Stack.Screen name='UserTab' component={UserTab} />
       <Stack.Screen name='DriverTab' component={DriverTab} />
